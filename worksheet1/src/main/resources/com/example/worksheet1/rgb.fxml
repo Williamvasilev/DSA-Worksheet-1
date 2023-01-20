@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worksheet1.RGBController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Red">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="redImage" fitHeight="213.0" fitWidth="267.0" layoutX="149.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="red" layoutX="264.0" layoutY="321.0" mnemonicParsing="false" onAction="#red" text="Red" />
+                        <Button layoutX="416.0" layoutY="321.0" mnemonicParsing="false" onAction="#change" text="Home" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Green">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="greenImage" fitHeight="204.0" fitWidth="274.0" layoutX="163.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="274.0" layoutY="310.0" mnemonicParsing="false" onAction="#green" text="Green" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Blue">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="blueImage" fitHeight="196.0" fitWidth="258.0" layoutX="171.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="274.0" layoutY="315.0" mnemonicParsing="false" onAction="#blue" text="Blue" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
